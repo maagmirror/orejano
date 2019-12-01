@@ -231,6 +231,19 @@ $(function () {
   
     navbarScroll();
   });
+
+  // Smooth scroll links navbar
+function navbarScroll() {
+    $('.menu-item').each(function () {
+      $(this).on('click', function (e) {
+        e.preventDefault();
+        $('#menu').collapse('hide');
+        var target = $(this.hash).offset().top - 50;
+        $('html, body').stop().animate({ scrollTop: target }, 1000);
+      });
+    });
+  }
+  
   
   $(window).on('scroll', function (event) {
     if (!didScroll) {
