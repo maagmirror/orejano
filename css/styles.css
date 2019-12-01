@@ -1,0 +1,275 @@
+/* scroll horizontal, está asi por que se puede 
+mover debido a la calculadora en version mobile */
+
+body{
+    overflow-x:hidden!important;
+}
+
+.bg-dark {
+    background-color: #222222!important;
+}
+
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+    color: #a94442;
+}
+
+h5.modal-title {
+    color: #341e09;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.modal-content {
+    border-radius: 0;
+    white-space:nowrap;
+}
+
+img.img-responsive.main-logo {
+    margin: -46px auto 0 auto;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.navbar-scrolled {
+    -webkit-animation: back 0.4s;
+    -moz-animation: back 0.4s;
+    -ms-animation: back 0.4s;
+    -o-animation: back 0.4s;
+    animation: back 0.4s;
+    background: #222222;
+}
+
+.modal-vertical-centered {
+    transform: translate(0, 30%) !important;
+    -ms-transform: translate(0, 30%) !important; /* IE 9 */
+    -webkit-transform: translate(0, 30%) !important; /* Safari and Chrome */
+}
+
+.navbarScroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+    height: auto;
+    background: #222222; 
+}
+
+
+#slides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#slides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#slides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+#slides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+.callbacks_nav{
+    display: none;
+}
+
+.callbacks_tabs{
+    background: rgba(0,0,0,.25);
+    font-size: 18px;
+    list-style: none;
+    margin: -43px auto 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.callbacks_tabs li:first-child {
+    margin-left: 0;
+}
+.callbacks_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 1px;
+}
+
+.callbacks_tabs li a:before {
+    content: ".";
+    color: black;
+    font-size: 70px;
+}
+
+.callbacks_tabs li a{
+    font-size:0px;
+    color: transparent;
+}
+
+.carousel-content{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.owl-dots{
+    background: #faf6f2;
+}
+
+.owl-carousel.owl-loaded {
+    display: block;
+    background: #faf6f2;
+}
+
+.carousel-center-content{
+    margin: auto;
+    width: 80%;
+    margin-top:10% ;
+}
+
+.carousel-img{
+    width: 80%!important;
+}
+
+.carousel-text {
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 300;
+    margin-top: 15%;
+}
+
+.btn-primary:hover {
+    background: #120a02;
+}
+
+.btn-primary {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #e4d2bd;
+    background: #341e09;
+    border-radius: 0;
+    border: 0;
+}
+
+.btn-primary:after {
+    content: "";
+    background: #341e09;
+    border: none;
+  }
+  
+  .btn-primary:active:after {
+    content: "";
+    background: #341e09; 
+    border: none; 
+  }
+
+@media only screen and (max-width: 600px) {
+    .carousel-center-content{
+        margin: auto;
+        width: 100%;
+        margin-top:0;
+    }
+    .carousel-text {
+        color: #fff;
+        font-size: 1em;
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 300;
+        position: relative;
+        margin-top: 1%!important;
+    }
+    .carousel-img {
+        width: 100%!important;
+        height: 90%!important;
+        position: absolute;
+    }
+
+    .btn-primary{
+        margin-top: 0.5rem!important;
+    }
+
+    .logo-slider{
+        display: none!important;
+    }
+
+    .modal-vertical-centered {
+        transform: translate(0, 10%) !important;
+        -ms-transform: translate(0, 10%) !important; /* IE 9 */
+        -webkit-transform: translate(0, 10%) !important; /* Safari and Chrome */
+    }
+
+    .modal-content {
+        white-space:inherit;
+    }
+    
+  }
+
+/* Calculadora */
+
+   section.calculadora { font-size: 13pt; background: #faf6f2; height: auto; padding-bottom: 80px;}
+   section.calculadora p.under-title { text-align: center; font-style: italic; }
+   section.calculadora h2 { font-size: 3em; margin-bottom: 0.5em; font-weight: 300; color: #341e09; text-transform: uppercase; }
+   section.calculadora header { margin: 20pt 0 40pt; text-align: center; text-transform: uppercase; }
+   section.calculadora .instructions { margin-top: 30pt; color: #999; text-align: center; }
+   section.calculadora .costo { position: relative; }
+   section.calculadora .costo.grande { font-size: 2em; font-weight: 700; }
+   section.calculadora .costo.grande.usd:after { font-size: 0.35em; bottom: 13px; }
+   section.calculadora .costo.chico { font-size: 1.5em; }
+   section.calculadora .costo.chico.usd:after { font-size: 0.5em; bottom: 8px; }
+   section.calculadora .costo.usd:after { display: inline-block; content: "USD"; margin-left: 0.25em; position: absolute; }
+   section.calculadora .panel { text-align: center; background-color: #fff; border-radius: 0; border: none; color: #341e09; box-shadow: 0 1px 1px rgba(0,0,0,.05);}
+   section.calculadora .panel .panel-title { text-transform: uppercase; font-size: 1.1em; color: #fff; background-color: #663D1E; padding: 5pt; }
+   section.calculadora .panel .panel-body { font-size: 1em; padding: 10pt 10pt 20pt; position: relative; }
+   section.calculadora .panel .panel-body div.porcentaje-comision { position: absolute; width: 100%; margin-left: -10pt; bottom: -34px; }
+   section.calculadora .panel .panel-body div.porcentaje-comision span { background: #663D1E; color: #fff; width: 60px; height: 60px; display: inline-block; padding: 18px 0; font-size: 0.9em; border-radius: 50%; }
+   section.calculadora .slider-row { margin-top: 20pt; }
+   section.calculadora .slider-row .range-label { color: #aaa; font-size: 0.9em; }
+   section.calculadora .slider-row .slider-container * { outline: none !important; }
+   section.calculadora .slider-row .slider-container #slider-range { margin-top: 10px; }
+   section.calculadora .slider-row .slider-container #slider-range.ui-slider-horizontal { height: 2px; background-color: #663D1E; border: none; }
+   section.calculadora .slider-row .slider-container #slider-range .ui-slider-handle { background-color: #663D1E; background-image: none; cursor: pointer; border-radius: 20px; width: 20px; height: 20px; top: -10px; box-shadow: 0 0 0 10px rgba(200, 200, 200, 0.5); }
+   section.calculadora .slider-row .slider-container #slider-range > span { position: relative; width: 25px; display: inline-block; }
+   section.calculadora .slider-row .slider-container #slider-range > span #slider-value { position: absolute; top: -40px; left: -69px; width: 150px; text-align: center; color: #663D1E; font-weight: 100; }
+   section.calculadora .resultados { margin-top: 30pt; font-size: 0.9em; }
+   section.calculadora .resultados .row {  flex-wrap: wrap; }
+   section.calculadora .resultados .panel-body .row { margin: 0; }
+   section.calculadora .resultados .panel-body { padding: 0; }
+   section.calculadora .resultados p { margin: 0; }
+   section.calculadora .resultados .nopadding { padding-right: 0; padding-left: 0; }
+   section.calculadora .resultados .left { background-color: #e4d2bd; }
+   section.calculadora .resultados .middle { background-color: #f9eee2; }
+   section.calculadora .resultados .costo { margin: 15pt 0; }
+   section.calculadora .resultados .vs:first-child { background-color: #999; padding: 10pt; color: #fff; }
+   section.calculadora .resultados .left .vs:first-child { background-color: #777; height: 71px; }
+   section.calculadora .resultados .middle .vs:first-child { background-color: #999; height: 71px; }
+   section.calculadora .resultados .right .vs:first-child { background-color: #bbb; height: 71px; }
+   section.calculadora .resultados hr { border-top: 1px solid #999; margin: 0 auto 15pt; width: 85%; }
+   

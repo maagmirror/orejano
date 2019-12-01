@@ -4,18 +4,401 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png"/>
+    <link rel="apple-touch-icon" href="favicon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="favicon.png"/>
 
-    <!-- Bootstrap-->
+    <!-- Jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.ui.js"></script>
+    <script src="js/jquery.touch.ui.js"></script>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- OWL Carousel -->
+    <script src="js/responsiveslides.js"></script>
+    <link rel="stylesheet" href="css/owlcarousel.css">
+    <link rel="stylesheet" href="css/owldefaulttheme.css">
+
+    <!-- Smooth Scroll -->
+    <script src="js/smooth.scroll.js"></script>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Orejano - Vende y comprá ganado - Uruguay</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            <img src="assets/logo.svg" width="100" class="d-inline-block align-top" alt="">
-        </a>
+
+    <!-- Navbar header -->
+    <div id="top"> </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#top">Inicio</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse dual-collapse2 order-1 order-md-0">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nav-como">¿Cómo funciona?</a>
+                    </li>
+                </ul>
+            </div>
+        <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.svg" width="100" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse dual-collapse2 order-2 order-md-2">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#nav-calculadora">Calculadora</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 dual-collapse2 order-3 order-md-3">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="/users/login">Ingresar</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+
+    <!-- Slider homepage -->
+
+    <div class="owl-carousel home-carousel owl-theme">
+        <div class="item">
+            <div style="margin:0; padding:0;" class="container-fluid">
+                <img src="assets/slider1.png" alt="">
+            </div>
+            <div class="carousel-content">
+                <div class="container-fluid">
+                    <div class="row carousel-center-content">
+                        <img class="img-responsive main-logo logo-slider" src="assets/logo.svg" width="445" height="190">
+                        <div class="col-8">
+                            <h1 class="carousel-text">¿TE GUSTARÍA ACEPTAR O RECHAZAR<br>
+                                OFERTAS POR TU GANADO DE FORMA LIBRE<br>
+                                Y TRANSPARENTE?<br>
+                                <button class="btn btn-primary text-center mt-4" type="button" href="#sect-log" data-toggle="modal" data-target="#contactModal">
+                                    ¡Tomá las riendas!
+                                </button>
+                            </h1>
+                        </div>
+                        <div class="col-4">
+                            <img class="carousel-img" src="assets/cow1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div style="margin:0; padding:0;" class="container-fluid">
+                <img src="assets/slider2.png" alt="">
+            </div>
+            <div class="carousel-content">
+                <div class="container-fluid">
+                    <div class="row carousel-center-content">
+                        <div class="col-8">
+                            <h1 class="carousel-text">¿TE GUSTARÍA ELEGIR EL GANADO QUE VOS<br>
+                                CREAS CONVENIENTE PARA TU SISTEMA<br>
+                                 PRODUCTIVO?<br>
+                                <button class="btn btn-primary text-center mt-4" type="button" href="#sect-log" data-toggle="modal" data-target="#contactModal">
+                                    ¡Tomá las riendas!
+                                </button>
+                            </h1>
+                        </div>
+                        <div class="col-4">
+                            <img class="carousel-img" src="assets/cow2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item">
+            <div style="margin:0; padding:0;" class="container-fluid">
+                <img src="assets/slider1.png" alt="">
+            </div>
+            <div class="carousel-content">
+                <div class="container-fluid">
+                    <div class="row carousel-center-content">
+                        <div class="col-8">
+                            <h1 class="carousel-text">¿TE GUSTARÍA PODER VENDER O COMPRAR<br>
+                                GANADO A QUIEN QUIERAS Y SIN<br>
+                                 INTERMEDIACIÓN?<br>
+                                <button class="btn btn-primary text-center mt-4" type="button" href="#sect-log" data-toggle="modal" data-target="#contactModal">
+                                    ¡Tomá las riendas!
+                                </button>
+                            </h1>
+                        </div>
+                        <div class="col-4">
+                            <img class="carousel-img" src="assets/cow3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calculadora -->
+
+    <section class="calculadora" onfocus="showactive()" id="nav-calculadora">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-8">
+                    <h2 class="text-center">Calculadora Orejano</h2>
+                    <p class="under-title">Con Orejano tenés las cuentas claras</p>
+                    <p class="instructions">Arrastra para cambiar el <b>valor del lote</b>:</p>
+                </div>
+
+                <div class="container">
+                    <div class="col-12 slider-row row">
+                                                    
+                        <div class="col-2 range-label text-right">
+                                5.000 USD
+                        </div>
+                        
+                        <div class="col-8 slider-container">
+                            <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;">
+                                    <span id="slider-value">5.000 USD</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-2 range-label">
+                            200.000 USD
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="resultados">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="row">
+
+                            <div class="col-sm-6 text-center">
+                                <div class="panel">
+                                    <div class="panel-title">Al vender 
+                                        <b>pagás</b>
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-4 left nopadding">
+                                                <p class="vs">Con <b>Orejano</b>
+                                                </p>
+                                                <p class="costo chico usd" id="costo-comision-vendedor">99</p>
+                                                <hr>
+                                                <p class="vs label-comision">Pagás el</p>
+                                                <p class="costo chico" id="porcentaje-comision-vendedor">1.98%</p>
+                                            </div>
+                                            <div class="col-4 middle nopadding">
+                                                <p class="vs">Con un <b>escritorio</b></p>
+                                                <p class="costo chico usd" id="costo-vendedor-vs-escritorio">150</p>
+                                                <hr>
+                                                <p class="vs label-ahorro">Con Orejano <b>ahorrás</b></p>
+                                                <p class="costo grande usd" id="ahorro-vendedor-vs-escritorio">51</p>
+                                            </div>
+                                            <div class="col-4 right nopadding">
+                                                <p class="vs">Con una <b>pantalla</b>*</p>
+                                                <p class="costo chico usd" id="costo-vendedor-vs-pantalla">300</p>
+                                                <hr>
+                                                <p class="vs label-ahorro">Con Orejano <b>ahorrás</b></p>
+                                                <p class="costo grande usd" id="ahorro-vendedor-vs-pantalla">201</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 text-center">
+                                <div class="panel">
+                                    <div class="panel-title">Al comprar 
+                                        <b>pagás</b>
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <div class="row">
+
+                                            <div class="col-4 left nopadding">
+                                                <p class="vs">Con <b>Orejano</b>
+                                                </p>
+                                                <p class="costo chico usd" id="costo-comision-comprador">0</p>
+                                                <hr>
+                                                <p class="vs label-comision">Pagás el</p>
+                                                <p class="costo chico" id="porcentaje-comision-comprador">0%</p>
+                                            </div>
+
+                                            <div class="col-4 middle nopadding">
+                                                <p class="vs">Con un <b>escritorio</b></p>
+                                                <p class="costo chico usd" id="costo-comprador-vs-escritorio">150</p>
+                                                <hr>
+                                                <p class="vs label-ahorro">Con Orejano <b>ahorrás</b></p>
+                                                <p class="costo grande usd" id="ahorro-comprador-vs-escritorio">150</p>
+                                            </div>
+
+                                            <div class="col-4 right nopadding">
+                                                <p class="vs">Con una <b>pantalla</b>*</p>
+                                                <p class="costo chico usd" id="costo-comprador-vs-pantalla">350</p>
+                                                <hr>
+                                                <p class="vs label-ahorro">Con Orejano <b>ahorrás</b></p>
+                                                <p class="costo grande usd" id="ahorro-comprador-vs-pantalla">350</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>*IVA incluido</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Modal -->
+
+    <div class="modal modal-vertical-centered" id="contactModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Formá Parte!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Nombre
+                                </label>
+                                <input class="form-control" type="text" name="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="localidad">Localidad
+                                </label>
+                                <input class="form-control" type="text" name="localidad" placeholder="Localidad">
+                            </div>
+                            
+                            <div class="form-group col-md-6">
+                                <label for="email">Correo Electrónico
+                                </label>
+                                <input class="form-control" type="email" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="tel">
+                                    Teléfono
+                                </label>
+                                <input class="form-control" type="text" name="telefono" placeholder="Teléfono">
+                            </div>
+
+                            <div class="checkbox col-4">
+                                <label>
+                                    <input type="checkbox" name="comprador"> Quiero comprar
+                                </label>
+                            </div>
+                            <div class="checkbox col-4">
+                                <label>
+                                    <input type="checkbox" name="productor"> Quiero vender
+                                </label>
+                            </div>
+                            <div class="checkbox col-4">
+                                <label>
+                                    <input type="checkbox" name="veterinario"> Soy Veterinario
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <input class="btn btn-primary send-message" type="submit" value="Ingresar">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+
+    <div class="modal fade" id="msjModal" tabindex="-1" role="dialog" aria-labelledby="msjModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+					</button>
+					<h4 class="modal-title" id="msjModalLabel">Aviso</h4>
+				</div>
+				<div class="modal-body"></div>
+			</div>
+		</div>
+	</div>
+    
+
+    <!-- Owl-Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+    // Homepage Slider (uses the Owl Carousel library)
+        $(".home-carousel").owlCarousel({
+            autoplay: true,
+            loop: true,
+            dots: true,
+            autoplayTimeout: 2000,
+            responsive: { 
+                0: 
+                { 
+                    items: 1 
+                }, 768: 
+                { 
+                    items: 1
+                }, 
+                900: 
+                { 
+                    items: 1 
+                }
+            }
+        });
+
+     // Smooth Scroll
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 600,
+	        speedAsDuration: true
+        });
+
+    </script>
+    
+
 </body>
 </html>
