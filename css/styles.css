@@ -5,12 +5,17 @@ body{
     overflow-x:hidden!important;
 }
 
-.bg-dark {
-    background-color: #222222!important;
+.has-error{
+    color: red;
+    border-color: red;
 }
 
-.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
-    color: #a94442;
+.has-error input{
+    border-color: red;
+}
+
+.bg-dark {
+    background-color: #222222!important;
 }
 
 h5.modal-title {
@@ -278,7 +283,13 @@ section.footer {
 
 section.footer .btn-primary {
     display: inline-block;
-    margin-top: 80px;
+    font-size: 2em;
+    margin-top: 113px;
+    margin-bottom: 113px;
+}
+
+section.footer img {
+    margin-top: 113px;
 }
 
 .login-link{
