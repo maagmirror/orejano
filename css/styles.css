@@ -19,12 +19,10 @@ h5.modal-title {
     text-transform: uppercase;
 }
 
-.modal-content {
-    border-radius: 0;
-    white-space:nowrap;
-}
+
 
 img.img-responsive.main-logo {
+    height: 30%;
     margin: -46px auto 0 auto;
     display: block;
     position: absolute;
@@ -51,11 +49,9 @@ img.img-responsive.main-logo {
 
 .navbarScroll {
     position: fixed;
-    top: 0;
+    right: 0;
     left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 10000;
+    z-index: 1030;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -168,6 +164,7 @@ img.img-responsive.main-logo {
 
 .btn-primary:hover {
     background: #120a02;
+    border: none;
 }
 
 .btn-primary {
@@ -176,7 +173,20 @@ img.img-responsive.main-logo {
     color: #e4d2bd;
     background: #341e09;
     border-radius: 0;
-    border: 0;
+    border: none;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #341e09;
+    border-color: #341e09;
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: black;
+    background-color: #e4d2bd;
+    border-color: #e4d2bd;
 }
 
 .btn-primary:after {
@@ -209,6 +219,46 @@ section.how .steps div {
     text-align: center;
     display: inline-block;
 }
+
+section.why h4 {
+    color: #bf9865;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+section.why h2 {
+    margin-top: 10%;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4em;
+}
+
+section.why p {
+    color: white;
+}
+
+section.why ul li {
+    color:white;
+    padding-left: 1em;
+    text-indent: -.7em;
+}
+
+section.why a.btn-link {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #341e09;
+    background: #bf9865;
+    padding: 10px 30px;
+}
+
+section.why a.btn-link:focus {
+    text-decoration:none!important;
+}
+
+section.why a.btn-link:hover {
+    text-decoration:none!important;
+}
+
 
 @media only screen and (max-width: 600px) {
     .carousel-center-content{
@@ -248,6 +298,11 @@ section.how .steps div {
     .modal-content {
         white-space:inherit;
     }
+
+    section.calculadora h2 {
+        font-size: 2em!important;
+        font-family: 'Libre Baskerville', serif;
+    }
     
   }
 
@@ -255,7 +310,7 @@ section.how .steps div {
 
    section.calculadora { font-size: 13pt; background: #faf6f2; height: auto; padding-bottom: 80px;}
    section.calculadora p.under-title { text-align: center; font-style: italic; }
-   section.calculadora h2 { font-size: 3em; margin-bottom: 0.5em; font-weight: 300; color: #341e09; text-transform: uppercase; }
+   section.calculadora h2 { font-family: 'Libre Baskerville', serif; font-size: 3em; margin-bottom: 0.5em; font-weight: 300; color: #341e09; text-transform: uppercase; }
    section.calculadora header { margin: 20pt 0 40pt; text-align: center; text-transform: uppercase; }
    section.calculadora .instructions { margin-top: 30pt; color: #999; text-align: center; }
    section.calculadora .costo { position: relative; }
