@@ -10,6 +10,17 @@ body{
     border-color: red;
 }
 
+.error-modal-border{
+    border: solid 2px red;
+}
+
+.center-modal {
+    position: sticky;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 .has-error input{
     border-color: red;
 }
@@ -299,9 +310,11 @@ section.footer img {
 
 
 @media only screen and (max-width: 600px) {
+
     .carousel-center-content{
         margin: auto;
         width: 100%;
+        height: 100%!important;
         margin-top:0;
     }
     .carousel-text {

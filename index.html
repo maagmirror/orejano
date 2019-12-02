@@ -321,7 +321,7 @@
 
     <section class="why bg-dark" id="nav-porque">
             <div class="container pb-5">
-                <div class="col-sm-12 col-xs-12 offset-md-1">
+                <div class="col-sm-12 col-xs-12 ">
                     <h2 class="text-center mb-5 pt-5">¿Por qué Orejano?</h2>
                     <h4>Vendedores cobran al contado en menos de 72hs</h4>
                     <p>Orejano cobra por anticipado el 100% del valor estimado del lote. Cuando el vendedor envía el ganado al comprador el dinero ya está con Orejano.</p>
@@ -350,7 +350,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 mt-5 mb-5">
-                        <img class="img-responsive" src="assets/logo.svg" width="445" height="190">
+                        <img class="img-responsive img-fluid" src="assets/logo.svg" width="445" height="190">
                         <div class="w-100"></div>
                         <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contactanos!</button>
                     </div>
@@ -471,7 +471,7 @@
     <!-- Message Modal -->
 
     <div class="modal fade" id="msjModal" tabindex="-1" role="dialog" aria-labelledby="msjModal">
-		<div class="modal-dialog" role="document">
+		<div class="modal-dialog center-modal error-modal-border" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
                     <h4 class="modal-title" id="msjModalLabel">Aviso</h4>
@@ -490,20 +490,21 @@
     <script type="text/javascript">
     // Homepage Slider (uses the Owl Carousel library)
         $(".home-carousel").owlCarousel({
+            lazyLoad : true,
             autoplay: true,
             loop: true,
             dots: true,
             autoplayTimeout: 2000,
             responsive: { 
                 0: 
-                { 
+                {
                     items: 1 
                 }, 768: 
-                { 
+                {
                     items: 1
                 }, 
                 900: 
-                { 
+                {
                     items: 1 
                 }
             }

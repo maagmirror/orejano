@@ -9,6 +9,7 @@ $(document).ready(function() {
     });
 });
 
+
 //navbar sticky only in desktop
 
 $(window).on("scroll", function () {
@@ -144,7 +145,7 @@ $(function () {
         $msjModal = $('#msjModal');
         $msjModal.find('.modal-body').html(msj);
         $msjModal.modal('show');
-    }
+    }    
   
   // Registration form
   function registrar(e) {
