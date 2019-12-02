@@ -19,7 +19,10 @@ h5.modal-title {
     text-transform: uppercase;
 }
 
-
+.material-icons {
+    font-size: 7em!important;
+    color: #663d1e!important;
+}
 
 img.img-responsive.main-logo {
     height: 30%;
@@ -201,6 +204,14 @@ img.img-responsive.main-logo {
     border: none; 
 }
 
+section.how h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: 300;
+    color: black;
+    text-transform: uppercase;
+}
+
 section.how h3 {
     text-transform: uppercase;
     color: #341e09;
@@ -257,6 +268,22 @@ section.why a.btn-link:focus {
 
 section.why a.btn-link:hover {
     text-decoration:none!important;
+}
+
+section.footer {
+    background: url(/assets/action-bkg.jpg) center center;
+    text-align: center;
+    position: relative;
+}
+
+section.footer .btn-primary {
+    display: inline-block;
+    margin-top: 80px;
+}
+
+.login-link{
+    background: #bf9865;
+    color:black!important;
 }
 
 

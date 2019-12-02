@@ -31,6 +31,7 @@
     <!-- CSS & Fonts-->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>Orejano - Vende y comprá ganado - Uruguay</title>
 </head>
@@ -68,10 +69,17 @@
                 </li>
             </ul>
         </div>
-        <div class="navbar-collapse collapse w-100 dual-collapse2 order-3 order-md-3">
+        <div class="navbar-collapse collapse dual-collapse2 order-2 order-md-2 w-100">
             <ul class="navbar-nav mr-auto text-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="/users/login">Ingresar</a>
+                    <a class="nav-link" href="#nav-porque">¿Por qué?</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse dual-collapse2 order-3 order-md-3">
+            <ul class="navbar-nav mr-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link login-link" href="/users/login">Ingresar</a>
                 </li>
             </ul>
         </div>
@@ -288,22 +296,22 @@
             <h2 class="mb-5 mt-5">¿CÓMO FUNCIONA OREJANO?</h2>
             <div class="row">
                 <div class="col-sm-3 col-xs-12 steps">
-                    <div>1</div>
+                    <i class="material-icons">publish</i>
                     <h3>Se publica</h3>
                     <p>Un lote es subido a la plataforma y certificado por un veterinario de confianza del vendedor.</p>
                 </div>
                 <div class="col-sm-3 col-xs-12 steps">
-                    <div>2</div>
+                    <i class="material-icons">local_offer</i>
                     <h3>Se oferta</h3>
                     <p>Una vez publicado el lote, el Vendedor recibirá diversas ofertas por parte de compradores interesados.</p>
                 </div>
                 <div class="col-sm-3 col-xs-12 steps">
-                    <div>3</div>
+                    <i class="material-icons">people</i>
                     <h3>Se coordina</h3>
                     <p>Una vez aceptada una oferta, Orejano proporcionará a las dos partes los datos necesarios para que puedan ponerse en contacto y acordar detalles finales.</p>
                 </div>
                 <div class="col-sm-3 col-xs-12 steps">
-                    <div>4</div>
+                    <i class="material-icons">assignment_turned_in</i>
                     <h3>Se entrega y se paga</h3>
                     <p>Acordados los detalles finales, las partes perfeccionan su contrato, el ganado es enviado al comprador con guía de venta y el vendedor recibirá su pago en menos de 72 hs hábiles.</p>
                 </div>
@@ -332,7 +340,20 @@
                         <li>Los lotes publicados únicamente podrán ser vistos por compradores compatibles con la publicación.</li>
                         <li>Solo usuarios registrados pueden ingresar a la plataforma.</li>
                         <li>Los veterinarios, vendedores y compradores son previamente entrevistados antes de otorgarles credenciales de acceso.</li>
-                    </ul><a class="btn-link" href="#" data-toggle="modal" data-target="#faqModal">Preguntas Frecuentes</a>
+                    </ul>
+                    <a class="btn-link mt-5" href="#" data-toggle="modal" data-target="#faqModal">Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-5 mb-5">
+                        <img class="img-responsive" src="assets/logo.svg" width="445" height="190">
+                        <div class="w-100"></div>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contactanos!</button>
+                    </div>
                 </div>
             </div>
         </section>
