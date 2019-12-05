@@ -97,7 +97,7 @@
                 <div class="container-fluid">
                     <div class="row carousel-center-content">
                         <img class="img-responsive main-logo logo-slider" src="assets/logo.svg">
-                        <div class="col-8">
+                        <div class="col-sm-8 col-xs-12">
                             <h1 class="carousel-text">¿TE GUSTARÍA ACEPTAR O RECHAZAR<br>
                                 OFERTAS POR TU GANADO DE FORMA LIBRE<br>
                                 Y TRANSPARENTE?<br>
@@ -106,7 +106,7 @@
                                 </button>
                             </h1>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-xs-12">
                             <img class="carousel-img" src="assets/cow1.png" alt="">
                         </div>
                     </div>
@@ -121,7 +121,7 @@
             <div class="carousel-content">
                 <div class="container-fluid">
                     <div class="row carousel-center-content">
-                        <div class="col-8">
+                        <div class="col-sm-8 col-xs-12">
                             <h1 class="carousel-text">¿TE GUSTARÍA ELEGIR EL GANADO QUE VOS<br>
                                 CREAS CONVENIENTE PARA TU SISTEMA<br>
                                  PRODUCTIVO?<br>
@@ -130,7 +130,7 @@
                                 </button>
                             </h1>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-xs-12">
                             <img class="carousel-img" src="assets/cow2.png" alt="">
                         </div>
                     </div>
@@ -145,7 +145,7 @@
             <div class="carousel-content">
                 <div class="container-fluid">
                     <div class="row carousel-center-content">
-                        <div class="col-8">
+                        <div class="col-sm-8 col-xs-12">
                             <h1 class="carousel-text">¿TE GUSTARÍA PODER VENDER O COMPRAR<br>
                                 GANADO A QUIEN QUIERAS Y SIN<br>
                                  INTERMEDIACIÓN?<br>
@@ -154,7 +154,7 @@
                                 </button>
                             </h1>
                         </div>
-                        <div class="col-4">
+                        <div class="col-sm-4 col-xs-12">
                             <img class="carousel-img" src="assets/cow3.png" alt="">
                         </div>
                     </div>
@@ -490,18 +490,20 @@
     <script type="text/javascript">
     // Homepage Slider (uses the Owl Carousel library)
         $(".home-carousel").owlCarousel({
+
             lazyLoad : true,
-            autoplay: true,
+            autoplay: false,
             loop: true,
             dots: true,
+            autoHeight:true,
             autoplayTimeout: 2000,
             responsive: { 
                 0: 
                 {
-                    items: 1 
+                    items: 1,
                 }, 768: 
                 {
-                    items: 1
+                    items: 1,
                 }, 
                 900: 
                 {

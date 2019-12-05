@@ -319,7 +319,7 @@ section.footer img {
     }
     .carousel-text {
         color: #fff;
-        font-size: 1em;
+        font-size: 1.5em;
         text-transform: uppercase;
         text-align: right;
         font-weight: 300;
@@ -329,7 +329,6 @@ section.footer img {
     .carousel-img {
         width: 100%!important;
         height: 90%!important;
-        position: absolute;
     }
 
     .btn-primary{
@@ -355,6 +354,16 @@ section.footer img {
         font-family: 'Libre Baskerville', serif;
     }
     
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: 400px!important;
+    }
+
+    .owl-item {
+        height: 530px!important;
+    }
+
   }
 
 /* Calculadora */
