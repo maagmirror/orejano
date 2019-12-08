@@ -322,8 +322,9 @@ section.footer img {
 
 
 @media only screen and (max-width: 600px) {
+
     section.calculadora .resultados .costo {
-        margin: 0pt 0!important;
+        margin: 0pt 0pt!important;
     }
 
     .carousel-center-content{
@@ -332,7 +333,7 @@ section.footer img {
         height: 100%!important;
         margin-top:0;
     }
-    
+
     .carousel-text {
         color: #fff;
         font-size: 1.5em;
