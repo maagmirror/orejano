@@ -300,6 +300,10 @@ a.card-link {
     color: #891f19;
 }
 
+.pb-13{
+    padding-bottom: 13rem!important;
+}
+
 section.footer .btn-primary {
     display: inline-block;
     font-size: 2em;
@@ -318,6 +322,9 @@ section.footer img {
 
 
 @media only screen and (max-width: 600px) {
+    section.calculadora .resultados .costo {
+        margin: 0pt 0!important;
+    }
 
     .carousel-center-content{
         margin: auto;
