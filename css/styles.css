@@ -296,6 +296,10 @@ a.card-link.collapsed {
     color: black;
 }
 
+a.card-link {
+    color: #891f19;
+}
+
 section.footer .btn-primary {
     display: inline-block;
     font-size: 2em;
