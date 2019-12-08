@@ -287,9 +287,13 @@ section.why a.btn-link:hover {
 }
 
 section.footer {
-    background: url(/assets/action-bkg.jpg) center center;
+    background: url(./../assets/action-bkg.jpg) center center;
     text-align: center;
     position: relative;
+}
+
+a.card-link.collapsed {
+    color: black;
 }
 
 section.footer .btn-primary {
