@@ -327,6 +327,10 @@ section.footer img {
         margin: 0pt 0pt!important;
     }
 
+    section.calculadora .resultados {
+        margin-top: 0pt!important;
+    }
+
     .carousel-center-content{
         margin: auto;
         width: 100%;
