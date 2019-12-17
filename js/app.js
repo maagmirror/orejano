@@ -125,20 +125,7 @@ $(function () {
    [200000, 0.5, 1],
   ];
   
-  // Navbar scroll
-  var didScroll = false;
-  function scrollPage() {
-    var changeHeaderOn = 200;
-    var $header = $('.navbar');
-    var sy = window.pageYOffset || document.documentElement.scrollTop;
-    if (sy >= changeHeaderOn) {
-      $header.addClass('scrolled');
-    } else {
-      $header.removeClass('scrolled');
-    }
-  
-    didScroll = false;
-  }
+
 
     // Modal para mensajes
     function mensaje(msj) {

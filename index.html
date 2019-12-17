@@ -338,58 +338,32 @@
 
         <section class="bg-light" id="nav-faq">
             <div class="container mb-5">
-                <h3 class="mt-5">PREGUNTAS FRECUENTES</h3>
-                <div id="accordion">
-                    <div class="card">
-                    <div class="card-header">
-                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                        ¿Cómo puedo formar parte de Orejano?
-                        </a>
+                <h1 class="mt-5">PREGUNTAS FRECUENTES</h3>
+                    <h2>¿Cómo puedo formar parte de Orejano?</h2>
+                    <div class="card-body">
+                        <ul>
+                            <li>Si eres veterinario.
+                                <br>Deberás asistir a una reunión donde se te explica todo lo necesario para formar parte.
+                                <br>Inscríbete en el sitio y nos pondremos en contacto contigo.</li>
+                            <li>Si quieres vender.
+                                <br>Llena el formulario de inscripción y nos pondremos en contacto contigo.</li>
+                            <li>Si quieres comprar.
+                                <br>Los compradores podrán formar parte de la plataforma previa reunión con el equipo de Orejano. Llena el formulario de inscripción y coordinaremos una reunión contigo.</li>
+                        </ul>
                     </div>
-                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <h2>¿Cómo funciona la licitación en Orejano?</h2>
+                    <div class="card-body">
+                        <ul>
+                            <li>Los lotes son publicados sin precio y sólo pueden ser vistos por compradores compatibles con mi publicación.</li>
+                            <li>Los compradores envían de forma privada ofertas sobre el lote de su interés. Los compradores no pueden ver las ofertas enviadas por otros compradores.</li>
+                            <li>Los vendedores recibirán varias ofertas y cuentan con la total libertad de aceptar y rechazar la que prefieran.</li>
+                        </ul>
+                    </div>
+                    <h2>Quiero vender y mi veterinario de confianza no forma parte de Orejano <br>¿Que puedo hacer?</h2>
                         <div class="card-body">
-                            <ol>
-                                <li>Si eres veterinario.
-                                    <br>Deberás asistir a una reunión donde se te explica todo lo necesario para formar parte.
-                                    <br>Inscríbete en el sitio y nos pondremos en contacto contigo.</li>
-                                <li>Si quieres vender.
-                                    <br>Llena el formulario de inscripción y nos pondremos en contacto contigo.</li>
-                                <li>Si quieres comprar.
-                                    <br>Los compradores podrán formar parte de la plataforma previa reunión con el equipo de Orejano. Llena el formulario de inscripción y coordinaremos una reunión contigo.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                            ¿Cómo funciona la licitación en Orejano?
-                        </a>
-                        </div>
-                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                <ul>
-                                    <li>Los lotes son publicados sin precio y sólo pueden ser vistos por compradores compatibles con mi publicación.</li>
-                                    <li>Los compradores envían de forma privada ofertas sobre el lote de su interés. Los compradores no pueden ver las ofertas enviadas por otros compradores.</li>
-                                    <li>Los vendedores recibirán varias ofertas y cuentan con la total libertad de aceptar y rechazar la que prefieran.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="card">
-                        <div class="card-header">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                            Quiero vender y mi veterinario de confianza no forma parte de Orejano <br>¿Que puedo hacer?
-                            </a>
-                        </div>
-                        <div id="collapseThree" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
                             <p class="mb-5">Dile que se ponga en contacto con nosotros llenando el formulario de inscripción.</p>
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">¡Tomá las riendas!</button>
-                            </div>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">¡Tomá las riendas!</button>
                         </div>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -524,7 +498,8 @@
 
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 600,
-	        speedAsDuration: true
+            speedAsDuration: true,
+            header: ".navbar",
         });
 
     </script>
