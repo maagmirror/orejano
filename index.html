@@ -33,6 +33,13 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+
     <title>Orejano - Vende y comprá ganado - Uruguay</title>
 </head>
 <body>
@@ -55,7 +62,7 @@
                 </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#nav-calculadora">Calculadora</a>
+                    <a class="nav-link calc-link" href="#nav-calculadora">Calculadora</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#nav-como">¿Cómo funciona?</a>
@@ -137,7 +144,7 @@
             <div class="carousel-content">
                 <div class="container-fluid">
                     <div class="row carousel-center-content">
-                        <div class="col-sm-8 col-xs-12">
+                        <div class="col-sm-8 col-xs-12 ">
                             <h1 class="carousel-text">¿TE GUSTARÍA PODER VENDER O COMPRAR<br>
                                 GANADO A QUIEN QUIERAS Y SIN<br>
                                  INTERMEDIACIÓN?<br>
@@ -154,10 +161,9 @@
             </div>
         </div>
     </div>
-
     <!-- Calculadora -->
-
-    <section class="calculadora" id="nav-calculadora">
+    
+    <section class="calculadora" id="nav-calculadora" >
         
         <div class="container">
             <div class="row">
@@ -471,7 +477,7 @@
     <script src="js/owl.carousel.min.js"></script>
 
     <script type="text/javascript">
-    // Homepage Slider (uses the Owl Carousel library)
+        // Homepage Slider (uses the Owl Carousel library)
         $(".home-carousel").owlCarousel({
             lazyLoad : true,
             autoplay: true,
@@ -493,17 +499,7 @@
                 }
             }
         });
-
-     // Smooth Scroll
-
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 600,
-            speedAsDuration: true,
-            header: ".navbar",
-        });
-
     </script>
-    
 
 </body>
 </html>

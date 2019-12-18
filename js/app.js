@@ -1,3 +1,14 @@
+// Smooth Scroll
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 600,
+  speedAsDuration: true,
+  header: ".navbar",
+  offset: 0,
+  easing: 'easeInOutQuart',
+  updateURL: false,
+});
+
 //navbar current
 
 $(document).ready(function() {
@@ -13,14 +24,14 @@ $(document).ready(function() {
 //navbar sticky only in desktop
 
 $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() >= 10) {
         $(".navbar").addClass("navbarScroll");
         $(".navbar").removeClass("bg-dark");
     }
     else {
         $(".navbar").removeClass("navbarScroll");
     }
-    if ($(this).scrollTop() < 100) {
+    if ($(this).scrollTop() <= 100) {
         $(".navbar").addClass("navbar-scrolled");
         $(".navbar").removeClass("navbarScroll");
     }

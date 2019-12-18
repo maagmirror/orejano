@@ -41,14 +41,14 @@ h5.modal-title {
 }
 
 img.img-responsive.main-logo {
-    height: 30%;
-    margin: -46px auto 0 auto;
+    height: 25%;
+    margin: -170px auto 0 auto;
     display: block;
     position: absolute;
     z-index: 1;
-    margin-left: auto;
+    margin-left: 15%;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
 }
 
 .navbar-scrolled {
@@ -174,11 +174,11 @@ img.img-responsive.main-logo {
 
 .carousel-text {
     color: #fff;
-    font-size: 2em;
+    font-size: 2.5em;
     text-transform: uppercase;
     text-align: right;
     font-weight: 300;
-    margin-top: 15%;
+    position: relative;
 }
 
 .btn-primary:hover {
@@ -321,7 +321,8 @@ section.footer img {
 }
 
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 600px) and (max-device-width : 1366px) {
 
     section.calculadora .resultados .costo {
         margin: 0pt 0pt!important;
@@ -345,8 +346,9 @@ section.footer img {
         text-align: right;
         font-weight: 300;
         position: relative;
-        margin-top: 1%!important;
+        margin-top: 1px!important;
     }
+
     .carousel-img {
         width: 100%!important;
         height: 90%!important;
